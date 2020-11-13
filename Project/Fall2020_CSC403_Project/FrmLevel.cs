@@ -26,7 +26,7 @@ namespace Fall2020_CSC403_Project {
 
     private void FrmLevel_Load(object sender, EventArgs e) {
       const int PADDING = 7;
-      const int NUM_WALLS = 13;
+      const int NUM_WALLS = 37;
 
       player = new Player(CreatePosition(picPlayer), CreateCollider(picPlayer, PADDING));
       bossKoolaid = new Enemy(CreatePosition(picBossKoolAid), CreateCollider(picBossKoolAid, PADDING));
@@ -284,6 +284,21 @@ namespace Fall2020_CSC403_Project {
                     break;
             }
                 
+        }
+
+        private void picWall3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picWall15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picWall12_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
