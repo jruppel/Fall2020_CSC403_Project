@@ -162,6 +162,7 @@ namespace Fall2020_CSC403_Project
             player.AddHealth("Small HP potion");
             UpdateHpPotionButtons();
             UpdateHealthBars();
+            isBaby();
         }
 
         //Use medium health potion
@@ -170,6 +171,7 @@ namespace Fall2020_CSC403_Project
             player.AddHealth("Medium HP potion");
             UpdateHpPotionButtons();
             UpdateHealthBars();
+            isBaby();
         }
 
         //Use large health potion
@@ -178,6 +180,7 @@ namespace Fall2020_CSC403_Project
             player.AddHealth("Large HP potion");
             UpdateHpPotionButtons();
             UpdateHealthBars();
+            isBaby();
         }
 
         private void addInventory()
