@@ -163,5 +163,8 @@
   <ItemGroup>
     <None Include="data\Pillbury DoughSlayer- Laser Eyes.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="data\Lays WKnife.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

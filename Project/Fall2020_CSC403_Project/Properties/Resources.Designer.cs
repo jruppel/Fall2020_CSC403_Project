@@ -112,6 +112,16 @@ namespace Fall2020_CSC403_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lays_WKnife {
+            get {
+                object obj = ResourceManager.GetObject("Lays WKnife", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mr_Pringle {
             get {
                 object obj = ResourceManager.GetObject("Mr Pringle", resourceCulture);
