@@ -11,8 +11,12 @@ namespace Fall2020_CSC403_Project {
     private Enemy enemyPoisonPacket;
     private Enemy bossKoolaid;
     private Enemy enemyCheeto;
+    private Enemy enemyCheeto2;
+    private Enemy enemyCheeto3;
     private Enemy enemyPringlesMan;
     private Enemy enemySlayer;
+    private Enemy enemyLays1;
+    private Enemy enemyLays2;
     private Enemy[] movingEnemies;
     private Character[] walls;
 
@@ -32,20 +36,32 @@ namespace Fall2020_CSC403_Project {
       bossKoolaid = new Enemy(CreatePosition(picBossKoolAid), CreateCollider(picBossKoolAid, PADDING));
       enemyPoisonPacket = new Enemy(CreatePosition(picEnemyPoisonPacket), CreateCollider(picEnemyPoisonPacket, PADDING));
       enemyCheeto = new Enemy(CreatePosition(picEnemyCheeto), CreateCollider(picEnemyCheeto, PADDING));
+      enemyCheeto2 = new Enemy(CreatePosition(picEnemyCheeto2), CreateCollider(picEnemyCheeto2, PADDING));
+      enemyCheeto3 = new Enemy(CreatePosition(picEnemyCheeto3), CreateCollider(picEnemyCheeto3, PADDING));
       enemyPringlesMan = new Enemy(CreatePosition(picPringlesMan), CreateCollider(picPringlesMan, PADDING));
       enemySlayer = new Enemy(CreatePosition(picPillsbury), CreateCollider(picPillsbury, PADDING));
+      enemyLays1 = new Enemy(CreatePosition(picEnemyLays1), CreateCollider(picEnemyLays1, PADDING));
+      enemyLays2 = new Enemy(CreatePosition(picEnemyLays2), CreateCollider(picEnemyLays2, PADDING));
 
       bossKoolaid.Img = picBossKoolAid.BackgroundImage;
       enemyPoisonPacket.Img = picEnemyPoisonPacket.BackgroundImage;
       enemyCheeto.Img = picEnemyCheeto.BackgroundImage;
+      enemyCheeto2.Img = picEnemyCheeto2.BackgroundImage;
+      enemyCheeto3.Img = picEnemyCheeto3.BackgroundImage;
       enemyPringlesMan.Img = picPringlesMan.BackgroundImage;
       enemySlayer.Img = picPillsbury.BackgroundImage;
+      enemyLays1.Img = picEnemyLays1.BackgroundImage;
+      enemyLays2.Img = picEnemyLays2.BackgroundImage;
 
 
       enemyCheeto.PicNumber = 1;
       enemyPoisonPacket.PicNumber = 2;
       enemyPringlesMan.PicNumber = 3;
       enemySlayer.PicNumber =4;
+      enemyCheeto2.PicNumber = 5;
+      enemyCheeto3.PicNumber = 6;
+      enemyLays1.PicNumber = 7;
+      enemyLays2.PicNumber = 8;
 
       bossKoolaid.Color = Color.Red;
       enemyPoisonPacket.Color = Color.Green;
@@ -59,7 +75,7 @@ namespace Fall2020_CSC403_Project {
         walls[w] = new Character(CreatePosition(pic), CreateCollider(pic, PADDING));
       }
 
-      movingEnemies = new Enemy[] { enemyCheeto, enemyPoisonPacket, enemyPringlesMan, enemySlayer};
+      movingEnemies = new Enemy[] { enemyCheeto, enemyPoisonPacket, enemyPringlesMan, enemySlayer, enemyCheeto2, enemyCheeto3, enemyLays2, enemyLays1};
 
       Game.player = player;
       timeBegin = DateTime.Now;
@@ -132,6 +148,18 @@ namespace Fall2020_CSC403_Project {
                             break;
                         case 4:
                             picPillsbury.Visible = false;
+                            break;
+                        case 5:
+                            picEnemyCheeto2.Visible = false;
+                            break;
+                        case 6:
+                            picEnemyCheeto3.Visible = false;
+                            break;
+                        case 7:
+                            picEnemyLays1.Visible = false;
+                            break;
+                        case 8:
+                            picEnemyLays2.Visible = false;
                             break;
                         default:
                             break;
@@ -279,6 +307,18 @@ namespace Fall2020_CSC403_Project {
                     break;
                 case 4:
                     picPillsbury.Location = new Point((int)enemy.Position.x, (int)enemy.Position.y);
+                    break;
+                case 5:
+                    picEnemyCheeto2.Location = new Point((int)enemy.Position.x, (int)enemy.Position.y);
+                    break;
+                case 6:
+                    picEnemyCheeto3.Location = new Point((int)enemy.Position.x, (int)enemy.Position.y);
+                    break;
+                case 7:
+                    picEnemyLays1.Location = new Point((int)enemy.Position.x, (int)enemy.Position.y);
+                    break;
+                case 8:
+                    picEnemyLays2.Location = new Point((int)enemy.Position.x, (int)enemy.Position.y);
                     break;
                 default:
                     break;
